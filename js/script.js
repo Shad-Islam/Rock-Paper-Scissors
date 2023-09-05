@@ -19,13 +19,13 @@ function computerTurn() {
   const randNum = Math.floor(Math.random() * 3) + 1;
   switch (randNum) {
     case 1:
-      computer = "ROCK";
+      computer = "ROCK ✊";
       break;
     case 2:
-      computer = "PAPER";
+      computer = "PAPER 🖐️";
       break;
     case 3:
-      computer = "SCISSORS";
+      computer = "SCISSORS ✌️";
       break;
   }
 }
@@ -33,11 +33,11 @@ function computerTurn() {
 function checkWinner() {
   if (player == computer) {
     return "Draw!";
-  } else if (computer == "ROCK") {
-    return player == "PAPER" ? "You win!!" : "You lose!";
-  } else if (computer == "PAPER") {
-    return player == "SCISSORS" ? "You win!!" : "You lose!";
-  } else if (computer == "SCISSORS") {
-    return player == "ROCK" ? "You win!!" : "You lose!";
+  } else if (computer == "ROCK ✊") {
+    return player == "PAPER 🖐️" ? "You win!!" : "You lose!";
+  } else if (computer == "PAPER 🖐️") {
+    return player == "SCISSORS ✌️" ? "You win!!" : "You lose!";
+  } else if (computer == "SCISSORS ✌️") {
+    return player == "ROCK ✊" ? "You win!!" : "You lose!";
   }
 }
